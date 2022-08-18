@@ -1,0 +1,509 @@
+Problem 1
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i =5 , j = 6;
+            callbyvalue(i, j);
+            callbyrefrence(ref i, ref j);
+        }
+        static void callbyvalue(int i, int j)
+        {
+            int k = i;
+            i = j;
+            j = k;
+            Console.WriteLine("This is by Call by value");
+            Console.WriteLine("value of i after swapped" + i);
+            Console.WriteLine("value of j after swapped" + j);
+            Console.WriteLine("=========================================");
+
+        }
+        static void callbyrefrence( ref int i,ref  int j)
+        {
+            int k = i;
+            i = j;
+            j = k;
+            Console.WriteLine("This is by Call by refrence");
+            Console.WriteLine("value of i after swapped" + i);
+            Console.WriteLine("value of j after swapped" + j);
+            Console.ReadLine();
+        }
+        
+    }
+}
+==============================================================================================================================
+Problem 2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the First number");
+            int i=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second number");
+            int j = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third number");
+            int k = Convert.ToInt32(Console.ReadLine());
+            int l = i * j * k;
+            Console.WriteLine(l);
+            Console.ReadLine();
+
+        }
+    }
+}
+================================================================================================================
+Problem 3
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i ,j;
+            Console.WriteLine("Enter value for i");
+            i = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter value for j");
+            j = Convert.ToInt32(Console.ReadLine());
+            int k = i + j;
+            Console.WriteLine(k);
+            int k1 = i - j;
+            Console.WriteLine(k1);
+            int k2 = i * j;
+            Console.WriteLine(k2);
+            int k3 = i / j;
+            Console.WriteLine(k3);
+            int k4 = i % j;
+            Console.WriteLine(k4);
+            Console.ReadLine();
+        }
+    }
+            
+
+  
+        }
+    
+
+==================================================================================================
+
+Problem 4
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, j, k, l,m;
+            Console.WriteLine("Enter the First Number");
+            i=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            j = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third Number");
+            k = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the fourth Number");
+            l = Convert.ToInt32(Console.ReadLine());
+            m= (i+j+k+l)/4;
+            Console.WriteLine("Average is" +" "+ m);
+            Console.ReadLine();
+
+
+        }
+    }
+}
+==========================================================================================================
+
+Prolem 5
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x,y, z,a,b;
+            Console.WriteLine("Enter the First Number");
+            x= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third Number");
+            z = Convert.ToInt32(Console.ReadLine());
+            a = (x + y) * z;
+            b =(x*y) + (y*z);
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.ReadLine();
+
+        }
+    }
+}
+=========================================================================================================
+
+Problem 6
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int age;
+            Console.WriteLine("Enter your age ");
+            age=Convert.ToInt32(Console.ReadLine());
+            if (age!=0)
+            {
+                Console.WriteLine("You look older than" +" "+ age);
+                Console.ReadLine(); 
+
+            }
+        }
+    }
+}
+==================================================================================================
+
+Problem 7
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.WriteLine("Enter the number");
+            i=Convert.ToInt32(Console.ReadLine());
+            Console.Write(i);
+            Console.Write(" ");
+            Console.Write(i);
+            Console.Write(" ");
+            Console.Write(i);
+            Console.Write(" ");
+            Console.Write(i);
+            Console.WriteLine();
+
+            Console.Write(i);
+            Console.Write(i);
+            Console.Write(i);
+            Console.Write(i);
+            Console.WriteLine();
+
+            Console.WriteLine("{0} {0} {0} {0}", i);
+            Console.WriteLine("{0}{0}{0}{0}", i);
+            Console.ReadLine(); 
+        }
+    }
+}
+=====================================================================
+
+Problem 8
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.WriteLine("Enter the number");
+            i=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}{0}{0}", i);
+            Console.WriteLine("{0}  {0}", i);
+            Console.WriteLine("{0}  {0}", i);
+            Console.WriteLine("{0}  {0}", i);
+            Console.WriteLine("{0}{0}{0}", i);
+            Console.ReadLine(); 
+        }
+    }
+}
+==================================================================================
+Problem 9
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int celcius,kelvin,fahren;
+            Console.WriteLine("Enter the amount of celcius");
+            celcius=Convert.ToInt32(Console.ReadLine());
+            kelvin = celcius + 273;
+            fahren = (celcius * 9 / 5) +32;
+            Console.WriteLine("kelvin =" + kelvin);
+            Console.WriteLine("fahrenheit =" + fahren);
+            Console.ReadLine(); 
+
+        }
+    }
+}
+=======================================================================================
+
+Problem 10
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            Console.WriteLine("Enter the first Integer");
+            x=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Integer");
+            y = Convert.ToInt32(Console.ReadLine());
+            if ((x < 0 && y > 0) || (x > 0 && y < 0))
+            {
+                Console.WriteLine("True");
+                Console.ReadLine();
+            }
+        }
+    }
+}
+======================================================================================================
+Problem 11
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s;
+            Console.WriteLine("Enter The String ");
+            s=Console.ReadLine();
+            bool ans =string.IsNullOrEmpty(s);
+            Console.WriteLine(ans);
+            Console.ReadLine(); 
+
+
+        }
+    }
+}
+=================================================================================================
+
+Problem 12
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, num1, kilometre,metre;
+            Console.WriteLine("Enter the value of metres");
+            num=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value of Kilometres");
+            num1=Convert.ToInt32(Console.ReadLine());
+            kilometre = num / 1000;
+            metre = num1 * 1000;
+            Console.WriteLine("Kilometre" +" " + kilometre);
+            Console.WriteLine("metres" + " " +metre);
+            Console.ReadLine();
+        }
+    }
+}
+===================================================================================================
+
+Problem 13
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int celsius,fahrenheit;
+            Console.WriteLine("Enter the celcius");
+            celsius=Convert.ToInt32(Console.ReadLine());
+            fahrenheit = (celsius * 9) / 5 + 32;
+            Console.WriteLine("fahrenheit" +" " +fahrenheit);
+            Console.ReadLine(); 
+        }
+    }
+}
+===================================================================================================
+
+Problem 14
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int amount, rupee;
+            Console.WriteLine("Enter the amount ");
+            amount=Convert.ToInt32(Console.ReadLine());
+            rupee = amount * 80;
+            Console.WriteLine("Indian Rupees"+" " + rupee);
+            Console.ReadLine(); 
+        }
+    }
+}
+
+
+===============================================================================================
+Problem 15
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            Console.WriteLine("Enter the first Integer");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Integer");
+            y = Convert.ToInt32(Console.ReadLine());
+            if (x > 0 && y > 0)
+            {
+                Console.WriteLine("True");
+
+            }
+            else
+            {
+                Console.WriteLine("False");
+                Console.ReadLine();
+            }
+            Console.ReadLine();
+        }
+    }
+}
+=========================================================================================================
+Problem 16
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_16
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s1, s2;
+            Console.WriteLine("Enter the firstname");
+            s1=Console.ReadLine();
+            Console.WriteLine("Enter the Lastname");
+            s2 = Console.ReadLine();
+            if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(s2))
+            {
+                Console.WriteLine("Welcome to my App");
+            }
+            else
+            {
+                Console.WriteLine("Please login");
+            }
+            Console.ReadLine(); 
+        }
+    }
+}
+
+
+
