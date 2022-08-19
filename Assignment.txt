@@ -1,0 +1,572 @@
+PROBLEM 1
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2,maxnumber,minnumber;
+            Console.WriteLine("Enter the First Number");
+            num1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            maxnumber=Math.Max(num1,num2);
+            minnumber=Math.Min(num1,num2);
+            Console.WriteLine("Large Number"+" "+ maxnumber);
+            Console.WriteLine("Small Number" + " " + minnumber);
+            Console.ReadLine(); 
+
+
+
+        }
+    }
+}
+==============================================================================================================
+PROBLEM 2
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+            Console.WriteLine("Enter the First Number");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third Number");
+            num3 = Convert.ToInt32(Console.ReadLine());
+            if (num1 > num2)
+            {
+                if (num1 > num3)
+                {
+                    Console.WriteLine("First Number is the Largest Number");
+                }
+                else
+                {
+                    Console.WriteLine("Third Number is the Largest Number");
+                }
+            }
+            else if (num2 > num3)
+            {
+                Console.WriteLine("Second Number is the Largest Number");
+            } 
+            else
+                Console.WriteLine("Third Number is the Largest Number");
+            Console.ReadLine();
+        }
+      
+    }
+}
+==========================================================================================================================
+PROBLEM 3
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char c1, c2;
+            Console.WriteLine("Enter the First Character");
+            c1 = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Enter the Second Character");
+            c2 = Convert.ToChar(Console.ReadLine());
+            bool ans =c1.Equals(c2);
+            Console.WriteLine(ans);
+            Console.ReadLine();
+        }
+    }
+}
+==============================================================================================================
+PROBLEM 4
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s1, s2;
+            Console.WriteLine("Enter the First String");
+            s1= Console.ReadLine();
+            Console.WriteLine("Enter the Second String");
+            s2 = Console.ReadLine();
+            if (s1==s2)
+            {
+                Console.WriteLine("Strings Are Equal");
+            }
+            else
+            {
+                Console.WriteLine("Strings are Not Equal");
+            }
+            Console.ReadLine();  
+        }
+    }
+}
+=========================================================================================================
+PROBLEM 5
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            Console.WriteLine("Enter the First Number");
+            num1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            if (num1>num2)
+            {
+                Console.WriteLine("First Number is Largest Number");
+            }
+            else
+            {
+                Console.WriteLine("Second Number is Largest Number");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+=======================================================================================================
+
+PROBLEM 6
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int year;
+            Console.WriteLine("Enter the Year");
+            year = Convert.ToInt32(Console.ReadLine());
+            if ((year%4)==0)
+            {
+                Console.WriteLine("Entered year is Leap year");
+            }
+            else
+            {
+                Console.WriteLine("Not a Leap year");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+====================================================================================================
+
+PROBLEM 7
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int mark1, mark2, mark3,total;
+            double percentage;
+            Console.WriteLine("Enter The First Subject mark");
+            mark1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter The Second Subject mark");
+            mark2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter The Third Subject mark");
+            mark3 = Convert.ToInt32(Console.ReadLine());
+            total = mark1 + mark2+ mark3;
+            Console.WriteLine("Total Marks"+" "+ total);
+            percentage = total / 3.0f;
+            Console.WriteLine("Total Percentage" + " " + percentage);
+            if (percentage < 35)
+            {
+                Console.WriteLine("Fail");
+            }
+            else if (percentage < 45 && percentage >= 35) 
+            {
+                Console.WriteLine("Third");
+            }
+            else if (percentage < 60 && percentage >= 45) 
+            {
+                Console.WriteLine("Second");
+            }
+            else
+            {
+                Console.WriteLine("First");
+            }
+            Console.ReadLine();
+
+
+        }
+    }
+}
+===========================================================================================================
+
+PROBLEM 8
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+    }
+}
+==================================================================================
+PROBLEM 9
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int  n, sum = 0;
+            
+
+            Console.WriteLine("Enter the number of terms :");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The odd numbers are :");
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine( 2 * i - 1);
+                sum += 2 * i - 1;
+            }
+            Console.WriteLine("The Sum of odd Natural Number upto {0} terms : {1} ", n, sum);
+            Console.ReadLine();
+        }
+    }
+}
+        
+    
+
+=======================================================================================================================
+PROBLEM 10
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, reverse, sum = 0;
+            Console.WriteLine("Enter the number");
+            num = Convert.ToInt32(Console.ReadLine());
+            for(int i = num; i!=0; i = i / 10)
+            {
+                reverse= i % 10;
+                sum = sum * 10 + reverse;
+            }
+            Console.Write("The number in reverse order is : {0}", sum);
+            Console.ReadLine();
+        }
+    }
+}
+===========================================================================
+PROBLEM 11
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            for (int i = 100; i <=200; i++)
+            {
+                if (i % 9 == 0)
+                {
+                    Console.Write("{0} ", i);
+                    sum += i;
+                }
+               
+            }
+            Console.WriteLine("\nSum of numbers which is divisible by 9 in 100 to 200 :  {0} ", sum);
+            Console.ReadLine();
+
+        }
+    }
+}
+==============================================================================================================================
+
+PROBLEM 12
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            Console.WriteLine("Enter the number");
+            num=Convert.ToInt32(Console.ReadLine());
+            if (num == 0)
+            {
+                Console.WriteLine("Entered Number is" + " " + num);
+
+            }
+            else if (num % 2 == 0 && num <= 100)
+            {
+                Console.WriteLine("Entered Number is Even ");
+            }
+            else if (num % 2 != 0 && num <= 100)
+            {
+                Console.WriteLine("Entered Number is Odd ");
+            }
+            else  
+            {
+                Console.WriteLine("Entered Number is too large ");
+            }
+
+            if (num % 10 == 0)
+            {
+                Console.WriteLine("Entered number is multiple of 10");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+=========================================================================================================================
+
+PROBLEM 13
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            for (int i = 100; i <=200; i++)
+            {
+                sum += i;
+            }
+            Console.WriteLine("The sum of integers from 100 to 200: {0}",sum);
+            Console.ReadLine();
+        }
+    }
+}
+===================================================================================================
+
+PROBLEM 14
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, userchoice;
+            Console.WriteLine("Enter the number");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the userchoice");
+            userchoice = Convert.ToInt32(Console.ReadLine());
+            switch (userchoice)
+            {
+                case 1:
+                    if (num == 0)
+                        Console.WriteLine("Entered number is" + num);
+                    break;
+                case 2:
+                    if (num % 2 == 0 && num <= 100)
+                        Console.WriteLine("Entered number is Even");
+                    if (num % 10 == 0)
+                        Console.WriteLine("Entered number is Multiples of 10");
+                    break;
+                case 3:
+                    if (num % 2 != 0 && num <= 100)
+                        Console.WriteLine("Entered number is Odd");
+                    break;
+                case 4:
+                    if (num > 100)
+                        Console.WriteLine("Entered number is Large");
+                    break;
+                default:
+                    break;
+
+
+            }
+            Console.ReadLine();
+        }
+    }
+
+}
+===========================================================================================================
+
+PROBLEM 15
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int j = 25;
+            for ( int i = 0; i <25; i++)
+            {
+                
+                Console.WriteLine("{0} {1}", i, j);
+                j--;
+                if (i > j)
+                {
+                    Console.WriteLine("Crossed Over");
+                    break;
+                }
+               
+            }
+            
+            Console.ReadLine();
+
+
+        }
+    }
+}
+=====================================================================================================
+PROBLEM 16
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _19_Problem_16
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int points = 100, count = 0;
+            while (count<4)
+            {
+                string s = Console.ReadLine();
+                if (s=="HIT")
+                {
+                    points += 10;
+                }
+                else if (s=="MISS")
+                {
+                    points -= 20;
+                }
+                else
+                {
+                    Console.WriteLine("enter valid input");
+                    break;
+                }
+                count++;    
+            }
+            Console.WriteLine(points);
+            Console.ReadLine();
+        }
+    }
+}
+
