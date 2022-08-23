@@ -1,0 +1,520 @@
+Problem 1
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numarray = new int[10];
+            Console.WriteLine("Enter the values for array ");
+            for (int i = 0; i < numarray.Length; i++)
+            {
+                Console.Write("elemnt -[{0}] ", i);
+                numarray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            foreach (var item in numarray)
+            {
+                Console.Write(item + "\t");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+===============================================================================================
+
+Problem 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            int[] myarray = new int[3];
+            Console.Write("Input the number of elements to store in the array :");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter {0} elements to store in the array  ", n);
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Element -{0} ", i);
+                myarray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("The  Actual values Stored in the array");
+                foreach (var item in myarray)
+            {
+                Console.Write(item +"\t");
+            }
+            Array.Sort(myarray);
+            Array.Reverse(myarray);
+            Console.WriteLine("\n After Reversing");
+            foreach (var item in myarray)
+            {
+                Console.Write(item + "\t");
+            }
+            Console.ReadLine();
+           
+        }
+    }
+}
+===========================================================================================================
+
+Problem 3
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, sum=0;
+            int[] myarray = new int[3];
+            Console.Write("Input the number of elements to store in the array :");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter {0} elements to store in the array  ", n);
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Element -{0} ", i);
+                myarray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            foreach (var item in myarray)
+            {
+                sum += item;
+            }
+                Console.WriteLine("The sum of myarray is  \t:"+ sum);
+                Console.ReadLine();
+            
+        }
+    }
+}
+================================================================================================
+
+
+Problem 4
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList newarray = new ArrayList(5);
+            newarray.Add(1);
+            newarray.Add(2);
+            newarray.Add(3);
+            newarray.Add(4);
+            newarray.Add(5);
+            foreach (var item in newarray)
+            {
+                Console.WriteLine(item);
+            }
+            newarray.Remove(4);
+            Console.WriteLine("After Removing the number of elements: " + newarray.Count);
+            
+            Console.ReadLine();
+        }
+    }
+}
+=====================================================================================================
+
+
+Problem 5
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[][] class_jag =new int[4][];
+            class_jag[0] = new int[] { 5, 9, 6 };
+            class_jag[1] = new int[] { 15, 19, 16,4 };
+            class_jag[2] = new int[] { 21, 9 };
+            class_jag[3] = new int[] { 5, 9, 6,3,1 };
+            for (int i = 0; i < class_jag.Length; i++)
+            {
+                Console.WriteLine("Class {0}:",i);
+                for (int j = 0; j < class_jag[i].Length; j++)
+                {
+                    Console.WriteLine("{0}" ,class_jag[i][j]);
+                }
+            }
+            Console.ReadLine();
+
+
+        }
+    }
+}
+===============================================================================================
+
+
+Problem 6
+
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack s = new Stack();
+            s.Push("Hello");
+            s.Push(1);
+            s.Push("Welcome");
+            s.Push(44.56);
+            int count =s.Count;
+            Console.WriteLine("Before pop");
+            Console.WriteLine("count= "+count);
+            foreach (var item in s)
+            {
+                Console.WriteLine(item);
+            }
+            s.Pop();
+            Console.WriteLine("------------------------------After pop--------------------------");
+            foreach (var item in s)
+            {
+                Console.WriteLine(item);
+            }
+            count = s.Count;
+            Console.WriteLine("count= "  +count);
+            Console.WriteLine("----------------------------------");
+            object o = s.Peek();
+            Console.WriteLine("The topmost element on the stack = "+o);
+            Console.ReadLine();
+        }
+    }
+}
+=======================================================================================
+
+Problem 7
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Queue my = new Queue();
+            my.Enqueue(12);
+            my.Enqueue(34.56);
+            my.Enqueue("Hello");
+            Console.WriteLine("Before Dequeue");
+            foreach (var item in my)
+            {
+                Console.WriteLine(item);    
+            }
+            my.Dequeue();
+            Console.WriteLine("------------------------After Dequeue-----------------------------");
+            foreach (var item in my)
+            {
+                Console.WriteLine(item);
+            }
+            object o = my.Peek();
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("The Peek is " +o);
+            Console.ReadLine();
+        }
+    }
+}
+=============================================================================================================
+
+Problem 8
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Hashtable h = new Hashtable();
+            h.Add(1, "Ford");
+            h.Add(2, "Renault");
+            h.Add(3, "TaTa");
+            h.Add(4, "BMW");
+            Console.WriteLine("Values in the HashTable");
+            foreach (DictionaryEntry item in h)
+            {
+                Console.WriteLine(item.Key +" " + item.Value);
+            }
+            h.Remove(2);
+            Console.WriteLine("-----------After Removing----------------");
+            foreach(DictionaryEntry item in h)
+            {
+                Console.WriteLine(item.Key + " " + item.Value);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+=============================================================================================
+
+Problem 9
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<float> mylist = new List<float>();
+            mylist.Add(45.34f);
+            mylist.Add(25.28f);
+            mylist.Add(98.64f);
+            mylist.Add(12.34f);
+            mylist.Add(38.12f);
+            mylist.Sort();
+            Console.WriteLine("Ascending Order");
+            foreach (var i in mylist)
+            {
+                Console.Write(i +"\t");
+            }   
+            mylist.Reverse();
+            Console.WriteLine("\n Descending Order");
+            foreach (var i in mylist)
+            {
+                Console.Write(i +"\t");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+===============================================================================================
+
+Problem 10
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(1, "Hello");
+            dict.Add(2, "Welcome");
+            dict.Add(3, "to");
+            dict.Add(4, "C#");
+            foreach (KeyValuePair<int,string> item in dict)
+            {
+                Console.WriteLine(item.Key +" "+ item.Value);
+
+            }
+            Console.ReadLine(); 
+        }
+    }
+}
+======================================================================================================
+
+Problem 11
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            SortedList mylist = new SortedList();
+            mylist.Add(2, "Welcome");
+            mylist.Add(1, "Hello");
+            mylist.Add(4, "C#");
+            mylist.Add(3, "to");
+            foreach (DictionaryEntry item in mylist)
+            {
+                Console.WriteLine(item.Key +" "+ item.Value);
+
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+========================================================================================
+
+Problem 12
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[] { 23, 45, 67, 21, 65, 12, 90, 65 };
+            int n = 8;
+            int max = arr[0];
+            int min = arr[0];
+            max = arr[0];
+            min = arr[0];
+            for (int i = 1; i < n; i++)
+            {
+                if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                }
+            }
+            Console.WriteLine("Maximum element = {0} ", max);
+            Console.WriteLine("Minimum element = {0} ", min);
+            Console.ReadLine();
+
+        }
+    }
+}
+==============================================================================================
+
+Problem 13
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] myarray = new int[] { 1, 3, 5, 200, 22, 2244, 213, 111 };
+            Console.WriteLine("Numbers Greater than 100");
+            for (int i = 0; i < myarray.Length; i++)
+            {
+                if (myarray[i]>100)
+                {
+                    Console.WriteLine(myarray[i]);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
+======================================================================================
+Problem 15
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22_Problem_15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[] { 1, 5, 3, 4, 3, 5, 6 };
+            int k = -1;
+            int n = arr.Length;
+            HashSet<int> set = new HashSet<int>();
+            for (int i = n-1; i >= 0; i--)
+            {
+                if (set.Contains(arr[i]))
+                {
+                    k = i;
+                    
+                }
+                else
+                {
+                    set.Add(arr[i]);
+                }   
+            }
+            if(k != -1)
+            {
+                Console.WriteLine(" First Repeating Element" +" "+ arr[k]);
+            }
+            else
+            {
+                Console.WriteLine("No Repeating Elements");
+            }
+            Console.ReadLine(); 
+        }
+
+
+    }
+}
+
