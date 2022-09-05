@@ -267,7 +267,7 @@ namespace catprodlibrary
 		public void Addcount()
 		{
 			prodcount += 1;
-			Console.WriteLine("You added {0} Products ", prodcount);
+			Console.WriteLine("You added {0} Product ", prodcount);
 		}
 
 		public void AddCategory(int cid, string cname, string cdescription)
@@ -283,7 +283,7 @@ namespace catprodlibrary
 			Console.WriteLine("Category Id  :" + CategoryId);
 			Console.WriteLine("Category Name  :" + CategoryName);
 			Console.WriteLine("Category Description  :" + Catdescription);
-			Console.WriteLine("------------------------------");
+			Console.WriteLine("-------------Product Details-----------------");
 
 
 			foreach (var item in ListofCat)
