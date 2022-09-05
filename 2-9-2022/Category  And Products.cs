@@ -209,6 +209,7 @@ namespace _2_Problem
             List<Products> prodlist = new List<Products>();
             prodlist.Add(p1);
             prodlist.Add(p2);
+	    c.ListofCat = prodlist;
             
             c.DisplayDetails();
             Console.ReadLine();
